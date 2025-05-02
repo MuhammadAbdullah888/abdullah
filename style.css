@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    background-color: black;
+    cursor: none;
+}
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: orange
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid brown
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+
+
+
+/* :start */
+.digitalocean {
+    width: 115px;
+    aspect-ratio: 1;
+    background:
+        repeating-conic-gradient(at 46% 46%, #0000 0 25%, #007cff 0 50%) 5% 94%/27.5% 27.5% no-repeat,
+        conic-gradient(#007cff 0 0) 38.5% 76.5%/19% 19% no-repeat,
+        radial-gradient(100% 100% at 0 0, #0000 60%, #007cff 61% 99%, #0000) 100% 100%/50% 50% no-repeat,
+        radial-gradient(50% 100% at 50% 100%, #0000 60%, #007cff 61% 99%, #0000) top/100% 50% no-repeat
+}
